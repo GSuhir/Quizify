@@ -28,6 +28,8 @@ Question.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'quiz',
+        modelName: 'questions',
     }
-)
+);
+
+module.exports = Question;
