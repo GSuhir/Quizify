@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class User extends Model {}
+class Quiz extends Model {}
 
-User.init(
+Quiz.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,29 +11,25 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        email: {
+        quiz_name: {
             type: DataTypes.STRING,
-            allowNull: false,
-            unique: true,
-            validate: {
-                isEmail: true,
-            },
+            allowNull: false
         },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [6,16]
+        question_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'questions',
+                key: 'id'
             }
-        }
+        },
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user',
+        modelName: 'quiz',
     }
 );
 
-module.exports = User;
+module.exports = Quiz;
