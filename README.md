@@ -43,7 +43,7 @@
 
 ## Usage
 
-For those who failed to get on Jeapardy
+For those who failed to get on Jeopardy!
 
 ## Tests
 - Easy
