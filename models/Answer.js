@@ -11,19 +11,7 @@ Answer.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        answerA: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        answerB: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        answerC: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        answerD: {
+        answer: {
             type: DataTypes.STRING,
             allowNull: false
         }
