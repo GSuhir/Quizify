@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+//encryption needed
 class User extends Model {}
 
 User.init(
@@ -28,6 +29,7 @@ User.init(
         }
     },
     {
+        //hooks needed
         sequelize,
         timestamps: false,
         freezeTableName: true,
