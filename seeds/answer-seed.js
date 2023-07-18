@@ -2,16 +2,10 @@ const { Answer } = require('../models');
 
 const answerData = [
     {
-        answer: 'apples',
-    },
-    {
-        answer: 'bananas',
-    },
-    {
-        answer: 'oranges',
-    },
-    {
-        answer: 'mangos',
+        answerA: 'apples',
+        answerB: 'bananas',
+        answerC: 'oranges',
+        answerD: 'mangos',
     },
 ];
 
