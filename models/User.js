@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 //encryption needed
@@ -29,13 +30,21 @@ User.init(
         }
     },
     {
-        //hooks needed
+
+        hooks: {
+          beforeCreate: async (newUserData) => {
+            newUserData.password = await bcrypt.hash(newUserData.password, 10);
+            return newUserData;
+          },
+        },
+
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: 'user',
-    }
-);
-
-module.exports = User;
+      }
+    );
+    
+    module.exports = User;
+    
