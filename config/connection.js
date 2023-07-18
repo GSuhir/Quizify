@@ -1,4 +1,4 @@
-const Sequelize = require('sequelize');
+const Sequelize = require('sequelize'); // Sequelize was lower case causing errors when trying to run server
 require('dotenv').config();
 
 let sequelize;
