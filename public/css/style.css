@@ -1,5 +1,9 @@
 body {
   background-color: lightblue;
+
+    background-image: url("../assets/question-mark.png");
+    background-repeat: repeat-x;
+  
 }
 
 body div header h1 {
