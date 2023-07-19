@@ -15,10 +15,10 @@ Question.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        answer_id: {
+        quiz_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'answers',
+                model: 'quiz',
                 key: 'id'
             }
         }

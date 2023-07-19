@@ -15,13 +15,6 @@ Quiz.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        question_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'questions',
-                key: 'id'
-            }
-        },
     },
     {
         sequelize,
