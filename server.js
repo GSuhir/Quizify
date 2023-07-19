@@ -12,7 +12,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001; 
 
-/////////////////////////
+
 
 const hbs = exphbs.create({ helpers });
 
@@ -46,6 +46,10 @@ app.get('/', (req, res) => {
 });
 
 app.use(routes);
+
+app.get('/homepage', (req, res) => {
+  res.render('homepage');
+});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server is running at http://localhost:${PORT}`));
