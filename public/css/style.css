@@ -7,3 +7,10 @@ body div header h1 {
     font-size: 50px;
     margin: 0.67em 0;
   }
+
+  .background-image {
+    background-image: url(/public/assets/question-mark.png);
+    background-repeat: repeat;
+    background-position: fixed;
+    background-size: 200px;
+  }
