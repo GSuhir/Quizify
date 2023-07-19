@@ -1,5 +1,9 @@
 body {
   background-color: lightblue;
+  background-image: url(../assets/question-mark.png);
+  background-repeat: repeat;
+  background-size: 900px 1100px;
+  margin: 2px 0px 10px 0px;
 }
 
 body div header h1 {
@@ -8,9 +12,8 @@ body div header h1 {
     margin: 0.67em 0;
   }
 
-  .background-image {
-    background-image: url(/public/assets/question-mark.png);
-    background-repeat: repeat;
-    background-position: fixed;
-    background-size: 200px;
-  }
+.login {
+  color:lightblue;
+}
+
+
