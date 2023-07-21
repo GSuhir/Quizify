@@ -1,4 +1,4 @@
-<h1></h1>
+{{!-- <h1></h1>
 {{#each projects as |project| }}
 <div class="row mb-4 project">
   <div class="col-md-5">
@@ -21,4 +21,56 @@
     </p>
   </div>
 </div>
-{{/each}}
+{{/each}} --}}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title class="purplefont">Quizify</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .buttons-container {
+      text-align: center;
+    }
+
+    .buttons-container button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: mediumpurple;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="buttons-container">
+    <h1 class="purplefont">Welcome!</h1>
+    <button onclick="makeQuiz()">Make a Quiz</button>
+    <button onclick="takeQuiz()">Take a Quiz</button>
+  </div>
+
+  <script>
+    function makeQuiz() {
+      // Add your logic for "Make a Quiz" button here
+      console.log("Make a Quiz button clicked");
+    }
+
+    function takeQuiz() {
+      // Add your logic for "Take a Quiz" button here
+      console.log("Take a Quiz button clicked");
+    }
+  </script>
+</body>
+</html>
