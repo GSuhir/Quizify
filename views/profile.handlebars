@@ -1,28 +1,52 @@
-<div class="row">
+{{!-- <div class="row">
   <div class="col-auto">
-    <h2>Welcome!</h2>
+    <h2></h2>
   </div>
-</div>
+</div> --}}
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Project:</h3>
+    <h3 class = "purplefont">Make a Quiz!</h3>
 
     <form class="form new-project-form">
       <div class="form-group">
-        <label for="project-name">project name:</label>
+        <label for="project-name" class="purplefont">Quiz Name:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
       </div>
       <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
+        <label for="project-funding" class="purplefont">Question:</label>
+        <input class="form-input" type="text" id="project-funding" name="project-funding" />
       </div>
       <div class="form-group">
-        <label for="project-desc">description:</label>
+        <label for="project-desc" class="purplefont">Answer A</label>
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <label for="project-desc" class="purplefont">Answer B</label>
+        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc" class="purplefont">Answer C</label>
+        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="project-desc" class="purplefont">Answer D</label>
+        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+      </div>
+      <div class="form-group">
+  <label for="project-desc" class="purplefont">Correct Answer:</label>
+  <select class="form-input" id="project-desc" name="project-desc">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+  </select>
+</div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Next Question</button>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">My Quiz is Done!</button>
       </div>
     </form>
   </div>
