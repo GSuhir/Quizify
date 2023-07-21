@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Quiz } = require('../../models');
+const { Quiz, Question } = require('../../models');
 
 router.get('/', async (req, res) => {
     try {
@@ -13,7 +13,9 @@ router.get('/', async (req, res) => {
 // fill in quizData
 router.get('/:id', async (req, res) => {
     try {
-        const quizData = await Quiz.findByPk(req.params.id, {});
+        const quizData = await Quiz.findByPk(req.params.id, {
+            include: [{ model: Question }]
+        });
 
         if (!quizData) {
             res.status(404).json({ message: 'Quiz not found.' });
