@@ -2,6 +2,8 @@
 
 ## General Information
 
+Quizify enables users to login to our page, make any number of quizes on any topic of their choosing, and take quizes that others made
+
 ## Technologies Used
 
 - Node.js
@@ -11,8 +13,7 @@
 - MySQL2 and the Sequelize ORM for the database.
 - GET route
 - POST route
-- (GET and POST routes for retrieving and adding new data.)
-- (Use at least one new library, package, or technology that we haven’t discussed.)
+- (Use at least one new library, package, or technology that we haven’t discussed -- Typescript)
 
 ## Link
 
@@ -27,7 +28,7 @@
 - [Information](#information)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Tests](#tests)
+- [Quizes](#quizes)
 - [Contributing](#contributing)
 - [Scores](scores)
 - [Questions](#questions)
@@ -35,20 +36,20 @@
 
 ## Information
 
-(Close to the mid-end of the project)
+First you need to sign up on Quizify by creating a username and password.
+(need More info)
 
 ## Installation
 
-(use of the application)
+Download from the link above
 
 ## Usage
 
 For those who failed to get on Jeopardy!
 
-## Tests
-- Easy
-- Medium
-- Hard
+## Quizes
+
+Unlimited for taking quizes or creating quizes
 
 ## Contributing
 - [Tristan Melillo](https://github.com/TristanM225)
@@ -58,14 +59,17 @@ For those who failed to get on Jeopardy!
 
 ## Scores
 
-High Scores
+Try to continuously beat your highest score. Once you have hit 100% then try to match that on a different quiz.  See how many 100% scores you can get in a row.
 
 ## Questions
+
+Reach out to the contributors or
 
 ![Google](https://custom-icon-badges.demolab.com/badge/Google-grey?logo=google&logoColor=red)(https://www.google.com/)
 
 
 ## License
+
 [![License: MIT](https://custom-icon-badges.demolab.com/badge/license-MIT-yellowgreen.svg?logo=law)](https://opensource.org/licenses/MIT)
 This application is covered under the MIT Licence
 
