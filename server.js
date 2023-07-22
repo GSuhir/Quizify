@@ -51,6 +51,10 @@ app.get('/homepage', (req, res) => {
   res.render('homepage');
 });
 
+app.get('/', (req, res) => { 
+  res.render('homepage', { logged_in: loggedIn });
+});
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server is running at http://localhost:${PORT}`));
 });
