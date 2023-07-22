@@ -1,7 +1,8 @@
-const router = require('express').Router();
+const quiz = require('express').Router({ mergeParams: true });
 const { Quiz, Question } = require('../../models');
+const questions = require('./questionRoutes');
 
-router.get('/', async (req, res) => {
+quiz.get('/', async (req, res) => {
     try {
         const quizData = await Quiz.findAll();
         res.status(200).json(quizData);
@@ -11,9 +12,9 @@ router.get('/', async (req, res) => {
 });
 
 // fill in quizData
-router.get('/:id', async (req, res) => {
+quiz.get('/:quizId', async (req, res) => {
     try {
-        const quizData = await Quiz.findByPk(req.params.id, {
+        const quizData = await Quiz.findByPk(req.params.quizId, {
             include: [{ model: Question }]
         });
 
@@ -28,7 +29,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+quiz.post('/', async (req, res) => {
     try {
         const quizData = await Quiz.create(req.body);
         res.status(200).json(quizData);
@@ -37,5 +38,5 @@ router.post('/', async (req, res) => {
     }
 });
 
-
-module.exports = router;
+quiz.use('/:quizId/questions', questions);
+module.exports = quiz;

@@ -10,32 +10,32 @@
 
     <form class="form new-project-form">
       <div class="form-group">
-        <label for="project-name" class="purplefont">Quiz Name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="quiz-name" class="purplefont">Quiz Name:</label>
+        <input class="form-input" type="text" id="quiz-name" name="quiz-name" />
       </div>
       <div class="form-group">
-        <label for="project-funding" class="purplefont">Question:</label>
-        <input class="form-input" type="text" id="project-funding" name="project-funding" />
+        <label for="question" class="purplefont">Question:</label>
+        <input class="form-input" type="text" id="question" name="question" />
       </div>
       <div class="form-group">
         <label for="project-desc" class="purplefont">Answer A</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <textarea class="form-input" id="ans-a" name="ans-a"></textarea>
       </div>
       <div class="form-group">
         <label for="project-desc" class="purplefont">Answer B</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <textarea class="form-input" id="ans-b" name="ans-b"></textarea>
       </div>
       <div class="form-group">
         <label for="project-desc" class="purplefont">Answer C</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <textarea class="form-input" id="ans-c" name="ans-c"></textarea>
       </div>
       <div class="form-group">
         <label for="project-desc" class="purplefont">Answer D</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <textarea class="form-input" id="ans-d" name="ans-d"></textarea>
       </div>
       <div class="form-group">
   <label for="project-desc" class="purplefont">Correct Answer:</label>
-  <select class="form-input" id="project-desc" name="project-desc">
+  <select class="form-input" id="correct-ans" name="correct-ans">
     <option value="A">A</option>
     <option value="B">B</option>
     <option value="C">C</option>
@@ -43,7 +43,7 @@
   </select>
 </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Next Question</button>
+        <button type="submit" class="btn btn-primary" id="btn-submit">Next Question</button>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">My Quiz is Done!</button>
@@ -69,4 +69,4 @@
   {{/if}}
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="/js/quiz-maker.js"></script>
