@@ -25,6 +25,10 @@ Answer.init(
         answerD: {
             type: DataTypes.STRING,
         },
+        correctAnswer: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         question_id: {
             type: DataTypes.INTEGER,
             references: {

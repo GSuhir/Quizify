@@ -1,30 +1,74 @@
-<h1>Quizify</h1>
-
-
-
-<form id="quiz-form">
-  <div class="button-container">
-    <button type="submit">Add Question</button>
+{{!-- <h1></h1>
+{{#each projects as |project| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/project/{{project.id}}">{{project.name}}</a>
+    </h2>
+    <p>
+      <span for="img" aria-label="money">💲</span>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
+      needed!
+    </p>
+    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
   </div>
   <div class="button-container">
     <button type="submit">Add Question</button>
   </div>
-  <div class="button-container">
-    <button type="submit">Add Question</button>
-  </div>
-  <div class="button-container">
-    <button type="submit">Add Question</button>
-  </div>
-</form>
+</div>
+{{/each}} --}}
 
 
-  <!-- Display the quiz questions and options here -->
-  <div id="quiz-questions">
-    <!-- Questions will be dynamically generated here -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title class="purplefont">Quizify</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .buttons-container {
+      text-align: center;
+    }
+
+    .buttons-container button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: mediumpurple;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="buttons-container">
+    <h1 class="purplefont">Welcome!</h1>
+    <button onclick="makeQuiz()">Make a Quiz</button>
+    <button onclick="takeQuiz()">Take a Quiz</button>
   </div>
 
- {{#if logged_in}}
-<script src="/js/logout.js"></script>
-{{/if}}
+  <script>
+    function makeQuiz() {
+      // Add your logic for "Make a Quiz" button here
+      console.log("Make a Quiz button clicked");
+    }
+
+    function takeQuiz() {
+      // Add your logic for "Take a Quiz" button here
+      console.log("Take a Quiz button clicked");
+    }
+  </script>
 </body>
 </html>

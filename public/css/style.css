@@ -12,8 +12,13 @@ body div header h1 {
     margin: 0.67em 0;
   }
 
-.login {
+.bluefont {
   color:lightblue;
+}
+
+.purplefont {
+  color: rgba(197, 3, 197, 0.705);
+  font-weight: bolder;
 }
 
 
