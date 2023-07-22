@@ -22,3 +22,12 @@ body div header h1 {
 }
 
 
+.button-container {
+  display: flex;
+  justify-content: center; /* Align buttons horizontally in the center */
+  margin-bottom: 10px; /* Add some space between the buttons */
+}
+
+.button-container button {
+  width: 150px; /* Set a fixed width for the buttons */
+}
