@@ -52,6 +52,7 @@ console.log(quizBody);
     }
 }
 
+//event listeners for buttons
 document
     .querySelector('.new-project-form')
     .addEventListener('submit', newFormHandler);
