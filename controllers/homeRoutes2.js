@@ -28,7 +28,7 @@ router.get('/quiz-maker', withAuth, async (req, res) => {
     }
 });
 
-router.get('/quiz', async (req, res) => {
+router.get('/quiz-list', async (req, res) => {
     try {
         const quizData = await Quiz.findAll();
 
