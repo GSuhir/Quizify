@@ -58,17 +58,6 @@ app.get('/homepage', (req, res) => {
 
   }
 });
-// app.get('/quiz-maker', (req, res) => {
-//   if (req.session.loggedIn) {
-//     // If the user is logged in, render the homepage
-//     res.render('quizMaker', { loggedIn: true });
-//   } else {
-//     // If the user is not logged in, redirect to the login page
-  
-//     res.render('login', { loggedIn: false });
-
-//   }
-// });
 
 // app.get('/', (req, res) => {
 //   res.render('homepage', { loggedIn: req.session.user ? true : false });
