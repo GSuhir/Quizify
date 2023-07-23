@@ -1,6 +1,6 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
-  
+  console.log('Hitting LOGIN', loginFormHandler);
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
@@ -12,7 +12,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/homepage');
       } else {
         alert('Failed to log in');
       }
@@ -37,6 +37,7 @@ const loginFormHandler = async (event) => {
         alert('Falied to sign up. :(');
     }
     }
+  
 };
   
   document

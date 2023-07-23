@@ -3,8 +3,8 @@ const { User, Quiz, Question, Answer } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/login', (req, res) => {
-    if (req.session.logged_in) {
-        res.redirect('/homepage');
+    if (req.session.loggedIn) {
+        res.redirect('/homepage'); //,{loggedIn: req.session.loggedIn}
         return;
     }
 
@@ -21,7 +21,7 @@ router.get('/quiz-maker', withAuth, async (req, res) => {
 
         res.render('quizMaker', {
             ...user,
-            logged_in: true
+            loggedIn: true
         });
     } catch (err) {
         res.status(500).json(err);
