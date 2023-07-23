@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router({ mergeParams: true });
 const userRoutes = require('./userRoutes');
 const quizRoutes = require('./quizRoutes');
 const questionRoutes = require('./questionRoutes');
@@ -6,7 +6,7 @@ const answerRoutes = require('./answerRoutes');
 
 router.use('/users', userRoutes);
 router.use('/quiz', quizRoutes);
-router.use('/questions', questionRoutes);
-router.use('/answers', answerRoutes);
+// router.use('/quiz/:quizId/questions', questionRoutes);
+// router.use('/answers', answerRoutes);
 
 module.exports = router;
