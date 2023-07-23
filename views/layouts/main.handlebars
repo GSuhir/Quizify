@@ -16,13 +16,10 @@
         Quizify
       </h1>
       <nav>
-        <!-- Conditionally render login or logout links -->
-       
-    {{#if logged_In}}
-        <a href="/login">Login</a>
-       
-    {{else}}
+
+       {{#if loggedIn}}
      <button id="logout" class="btn-no-style">Logout</button>
+     <button id="home" class="btn-no-style">Home</button>
 
     {{/if}}
       </nav>
@@ -37,7 +34,7 @@
   </div>
 
   <!-- Render script for logged in users only -->
-  {{#if logged_in}}
+  {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>

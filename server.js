@@ -41,23 +41,53 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-  res.redirect('/login');
-});
+// app.get('/', (req, res) => {
+//   res.redirect('/login');
+// });
 
 app.use(routes);
 
 app.get('/homepage', (req, res) => {
-  res.render('homepage');
+  if (req.session.loggedIn) {
+    // If the user is logged in, render the homepage
+    res.render('homepage', { loggedIn: true });
+  } else {
+    // If the user is not logged in, redirect to the login page
+  
+    res.render('login', { loggedIn: false });
+
+  }
+});
+// app.get('/quiz-maker', (req, res) => {
+//   if (req.session.loggedIn) {
+//     // If the user is logged in, render the homepage
+//     res.render('quizMaker', { loggedIn: true });
+//   } else {
+//     // If the user is not logged in, redirect to the login page
+  
+//     res.render('login', { loggedIn: false });
+
+//   }
+// });
+
+// app.get('/', (req, res) => {
+//   res.render('homepage', { loggedIn: req.session.user ? true : false });
+// });
+
+app.get('/', (req, res) => {
+  console.log(req.session)
+  if (req.session.user) {
+    // If the user is logged in, render the homepage
+    res.render('homepage', { loggedIn: true });
+  } else {
+    // If the user is not logged in, redirect to the login page
+  
+    res.render('login', { loggedIn: false });
+
+  }
 });
 
-app.get('/', (req, res) => { 
-  res.render('homepage', { logged_in: loggedIn });
-});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server is running at http://localhost:${PORT}`));
 });
-
-
-
