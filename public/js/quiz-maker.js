@@ -2,7 +2,7 @@ const newFormHandler = async (event) => {
     event.preventDefault();
 
     const quiz_name = document.querySelector('#quiz-name').value;
-    const question = document.querySelector('#question').value;
+    const question_name = document.querySelector('#question').value;
     const answerA = document.querySelector('#ans-a').value;
     const answerB = document.querySelector('#ans-b').value;
     const answerC = document.querySelector('#ans-c').value;
@@ -23,7 +23,7 @@ console.log(quizBody);
     const responseQuestion = await fetch(`/api/quiz/${quizBody.id}/questions`, {
         method: 'POST',
 
-        body: JSON.stringify({ question }),
+        body: JSON.stringify({ question_name }),
         headers: {
             'Content-Type': 'application/json',
         },
