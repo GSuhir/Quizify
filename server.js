@@ -5,6 +5,8 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 require('dotenv').config();
+const usersRoute = require('./controllers/api/userRoutes'); // Replace './users' with the actual path to your users.js file
+
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -41,11 +43,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.get('/', (req, res) => {
-//   res.redirect('/login');
-// });
+
 
 app.use(routes);
+
 
 app.get('/homepage', (req, res) => {
   if (req.session.loggedIn) {
@@ -59,10 +60,6 @@ app.get('/homepage', (req, res) => {
   }
 });
 
-// app.get('/', (req, res) => {
-//   res.render('homepage', { loggedIn: req.session.user ? true : false });
-// });
-
 app.get('/', (req, res) => {
   console.log(req.session)
   if (req.session.user) {
@@ -75,6 +72,7 @@ app.get('/', (req, res) => {
 
   }
 });
+
 
 
 

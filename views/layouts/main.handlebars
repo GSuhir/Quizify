@@ -15,14 +15,13 @@
       <h1 class="purplefont">
         Quizify
       </h1>
-      <nav>
-
-       {{#if loggedIn}}
-     <button id="logout" class="btn-no-style">Logout</button>
-     <button id="home" class="btn-no-style">Home</button>
-
+           
+    {{#if loggedIn}}
+    <nav>
+     <button id="logout">Logout</button>
+     <button id="home">Home</button>
+     </nav>
     {{/if}}
-      </nav>
     </header>
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
@@ -36,6 +35,7 @@
   <!-- Render script for logged in users only -->
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
+    <script src="/js/home.js"></script>
   {{/if}}
 </body>
 
