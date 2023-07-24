@@ -11,7 +11,7 @@ const checkAnswer = async (event) => {
     });
 
     if(userAnswer != getAnswer) {
-        alert('Thanks for playing :)')
+        alert('Wrong :)')
     } else {
         alert('Correct! :)')
     }

@@ -31,3 +31,16 @@ body div header h1 {
 .button-container button {
   width: 150px; /* Set a fixed width for the buttons */
 }
+
+.square {
+  color:white;
+  background-color: black;
+  border-radius: 100px;
+  border-color: rgba(197, 3, 197, 0.705);
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+h2,h3 {
+  color: rgba(197, 3, 197, 0.705);
+}

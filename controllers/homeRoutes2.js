@@ -11,6 +11,7 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
+
 router.get('/quiz-maker', withAuth, async (req, res) => {
     try {
         const userData = await User.findByPk(req.session.user_id, {
@@ -35,7 +36,8 @@ router.get('/quiz-list', async (req, res) => {
         const quizzes = quizData.map((quiz) => quiz.get({ plain: true }));
     
         res.render('quizList', {
-            quizzes
+            quizzes,
+            loggedIn: true
         });
     } catch (err) {
         res.status(500).json(err);
@@ -55,7 +57,8 @@ router.get('/quiz/:id', async (req, res) => {
 
         res.render('quizTaker', {
             ...quiz,
-            ...questions
+            ...questions,
+            loggedIn: true
         });
     } catch (err) {
         res.status(500).json(err);
