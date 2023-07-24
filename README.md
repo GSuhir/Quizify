@@ -22,6 +22,7 @@ Quizify enables users to login to our page, make any number of quizes on any top
 
 ## Screenshot
 ![Alt text](image.png)
+![Alt text](image-1.png)
 
 ## Table of Contents:
 
@@ -37,7 +38,8 @@ Quizify enables users to login to our page, make any number of quizes on any top
 ## Information
 
 First, you need to sign up on Quizify by creating a username and password.
-After you have successfully logged in, then you can choose whether you want to take a quiz or make a quiz. If you decide to take a quiz, then do your best to try to make 100%! If not, try again.  On the other hand, if you want to make a quiz, you can challenge yourself to come up with questions that may stump your peers. Good Luck!
+After you have successfully logged in, then you can choose whether you want to take a quiz or make a quiz. If you decide to take a quiz, then do your best to try to make 100%! If not, try again.  On the other hand, if you want to make a quiz, 
+you can challenge yourself to come up with questions that may stump your peers. Good Luck!
 
 ## Installation
 
