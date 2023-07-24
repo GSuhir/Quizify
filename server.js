@@ -76,6 +76,8 @@ app.get('/', (req, res) => {
   }
 });
 
+
+
 const databaseUrl = process.env.DATABASE_URL || 'mysql://root:password@localhost:3306/mydatabase';
 
 const sequelizeOptions = {
@@ -83,7 +85,7 @@ const sequelizeOptions = {
   logging: false, // Set to true for debugging database queries
 };
 
-const sequelize = new Sequelize(databaseUrl, sequelizeOptions);
+// const sequelize = new Sequelize(databaseUrl, sequelizeOptions);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server is running at http://localhost:${PORT}`));
