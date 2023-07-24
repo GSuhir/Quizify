@@ -35,7 +35,12 @@ console.log(quizBody);
 
     const responseAnswer = await fetch(`/api/quiz/${quizBody.id}/questions/${questionBody.id}/answers`, {
         method: 'POST',
-        body: JSON.stringify({ answerA, answerB, answerC, answerD, correctAnswer }),
+        body: JSON.stringify({
+            answerA,
+            answerB,
+            answerC,
+            answerD,
+            correctAnswer: `answer${correctAnswer}` }),
         headers: {
             'Content-Type': 'application/json',
         },
