@@ -21,8 +21,8 @@ Quizify enables users to login to our page, make any number of quizes on any top
 (Close to the end of the project)
 
 ## Screenshot
-![Alt text](image.png)
 ![Alt text](image-1.png)
+![Alt text](image.png)
 
 ## Table of Contents:
 
