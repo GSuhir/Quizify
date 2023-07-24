@@ -2,7 +2,7 @@
 
 ## General Information
 
-Quizify enables users to login to our page, make any number of quizes on any topic of their choosing, and take quizes that others made
+Quizify enables users to login to our page, make any number of quizes on any topic of their choosing, and take quizes that others made.
 
 ## Technologies Used
 
@@ -10,18 +10,18 @@ Quizify enables users to login to our page, make any number of quizes on any top
 - Express.js
 - RESTful API.
 - Handlebars.js
+- Nodemon.js
 - MySQL2 and the Sequelize ORM for the database.
 - GET route
 - POST route
-- (Use at least one new library, package, or technology that we haven’t discussed -- Typescript)
+
 
 ## Link
 
 (Close to the end of the project)
 
 ## Screenshot
-
-(Close to the end of the project)
+![Alt text](image.png)
 
 ## Table of Contents:
 
@@ -36,8 +36,8 @@ Quizify enables users to login to our page, make any number of quizes on any top
 
 ## Information
 
-First you need to sign up on Quizify by creating a username and password.
-(need More info)
+First, you need to sign up on Quizify by creating a username and password.
+After you have successfully logged in, then you can choose whether you want to take a quiz or make a quiz. If you decide to take a quiz, then do your best to try to make 100%! If not, try again.  On the other hand, if you want to make a quiz, you can challenge yourself to come up with questions that may stump your peers. Good Luck!
 
 ## Installation
 
