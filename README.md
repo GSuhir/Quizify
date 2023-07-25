@@ -11,14 +11,18 @@ Quizify enables users to login to our page, make any number of quizes on any top
 - RESTful API.
 - Handlebars.js
 - Nodemon.js
+- Bcrypt
+- Heroku
+- Github
+- HTML, CSS & Javascript
 - MySQL2 and the Sequelize ORM for the database.
 - GET route
 - POST route
 
 
 ## Link
-
-(Close to the end of the project)
+https://github.com/GSuhir/Quizify
+https://quizify-6866e2aeeddc.herokuapp.com/
 
 ## Screenshot
 ![Alt text](image-1.png)
