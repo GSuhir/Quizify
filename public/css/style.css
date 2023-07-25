@@ -44,3 +44,30 @@ body div header h1 {
 h2,h3 {
   color: rgba(197, 3, 197, 0.705);
 }
+
+.purple-box a {
+  color: purple;
+  text-decoration: none; 
+}
+
+
+.purple-box a:hover {
+  color: darkblue; 
+}
+
+
+.quiz-button {
+  display: inline-block;
+  background-color: #e6e6ff; 
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: purple;
+  text-decoration: none; 
+  transition: background-color 0.3s ease; 
+}
+
+
+.quiz-button:hover {
+  background-color: #d1d1ff; 
+}
+
