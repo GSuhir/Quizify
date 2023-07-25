@@ -21,8 +21,8 @@ Quizify enables users to login to our page, make any number of quizes on any top
 
 
 ## Link
-https://github.com/GSuhir/Quizify
-https://quizify-6866e2aeeddc.herokuapp.com/
+- https://github.com/GSuhir/Quizify
+- https://quizify-6866e2aeeddc.herokuapp.com/
 
 ## Screenshot
 ![Alt text](image-1.png)
